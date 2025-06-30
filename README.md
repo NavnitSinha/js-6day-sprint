@@ -1,4 +1,4 @@
-##JavaScript 6 Day Sprint!
+## JavaScript 6 Day Sprint!
 
 Focused on mastering core JavaScript skills, DOM manipulation, and async workflows through hands-on projects and practice.
 
