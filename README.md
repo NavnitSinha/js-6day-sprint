@@ -2,6 +2,7 @@ JavaScript 6 Day Sprint!
 
 Focused on mastering core JavaScript skills, DOM manipulation, and async workflows through hands-on projects and practice.
 
+## 📅 Day Plan
 Day 1–3: JavaScript Fundamentals
 •	Syntax, variables, loops, arrays, functions
 •	DOM manipulation and addEventListener
