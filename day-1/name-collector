@@ -1,0 +1,25 @@
+/*Name Collector” — A Simple Input + Output App
+You’ll:
+Collect a name from the user
+Store it in a variable
+Show a greeting using console.log()
+
+Level It Up (Optional)
+Try adding:
+An array to store 3 names
+A loop to greet each one
+A function to handle the greeting*/
+
+/*let userName = prompt("What's your name? ")
+console.log("Hello", userName,"!, it's pleasure to meet you!")*/
+
+let userName1 = prompt("What's your name? ")
+let userName2 = prompt("What's your name? ")
+let userName3 = prompt("What's your name? ")
+
+let users = [userName1, userName2, userName3]
+for (let username of users){
+    console.log("hello", username, "!")
+    
+}
+    
