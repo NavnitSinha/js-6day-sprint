@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Project</title>
+  </head>
+  <body>
+    <button id="mybutton">Want a Joke? Click Me!</button>
+    <p id="jokeText">Click on the buttonto see the joke</p>
+    <script>
+      document.getElementById("mybutton").addEventListener("click",function(){
+      fetch("https://api.chucknorris.io/jokes/random")
+      .then(response=>response.json())
+      .then(data => {
+      document.getElementById("jokeText").innerText=data.value;
+      });
+    });
+    </script>
+  </body>
+</html>
