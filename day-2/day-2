@@ -1,0 +1,80 @@
+JavaScript Day 2: Intermediate Core
+
+🚀 What we’re covering:
+✅ Events
+✅ Objects
+✅ Arrays of objects
+✅ fetch(), Promises, and API intro (if we have time)
+
+1. 🎯 Events : Events let your webpage respond to user actions (like clicks, keypresses).
+
+👉 Basic Button Click:
+<button id="myBtn">Click me</button>
+
+<script>
+  document.getElementById("myBtn").addEventListener("click", function() {
+    alert("You clicked the button!");
+  });
+</script>
+
+addEventListener() connects the action ("click") to a function (what happens).
+
+2. 🧱 Objects : Just like Python dictionaries or C++ structs.
+
+let person = {
+  name: "Navnit",
+  age: 25,
+  isCool: true
+};
+
+console.log(person.name); // Navnit
+
+You can even add or change properties:
+person.job = "Engineer";
+
+3. 🧰 Arrays of Objects : Used all the time for handling lists of stuff like users, products, etc.
+ 
+let users = [
+  { name: "Raj", age: 21 },
+  { name: "Ali", age: 22 },
+  { name: "Navnit", age: 23 }
+];
+
+for (let user of users) {
+  console.log(user.name + " is " + user.age + " years old.");
+}
+
+🌐 fetch(), Promises & Intro to APIs
+
+📦 1. What is fetch()? : fetch() is how JavaScript gets data from external sources (like APIs).
+
+Example:
+
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // do something with the fetched data
+  });
+
+🧠 Breakdown:
+fetch() – Sends a request (like "hey, gimme data").
+.then() – Waits for the response to come back.
+.json() – Converts the response into usable JavaScript data.
+Second .then() – Actually uses the data.
+
+🤯 What's a Promise?
+
+A Promise is like ordering food:
+You place the order → fetching
+It gets cooked → waiting (pending)
+It arrives → fulfilled
+If something breaks → rejected
+So fetch() returns a promise — you wait on it with .then().
+
+🧪 Let’s Try a Real API (Joke API):
+
+fetch("https://api.chucknorris.io/jokes/random")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data.value); // the joke text
+  });
