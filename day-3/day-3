@@ -1,0 +1,64 @@
+🚀 Here's Your Day 3 Plan:
+  
+✅ Part 1: Mini Concept Drill
+Build a "Live Greeting App":
+
+User types their name → You greet them instantly on screen.
+
+✅ Part 2: Mini Project – To-Do List (No database)
+Create tasks, display them, and clear them — all live on the page using JS arrays.
+
+✅ Optional: Build a “Mood Message” app
+Click a button and show a random uplifting message from an array.
+
+Part 1: Live Greeting App — quick, smooth, and hella satisfying.
+
+🧠 Live Greeting App
+🎯 Goal:
+User types their name → It instantly says:
+
+"Hello, [Name]!" on the screen.
+
+✅ Step-by-step:
+🔸 HTML
+
+<input type="text" id="nameInput" placeholder="Enter your name" />
+<p id="greetingText">👋 Type your name above</p>
+  
+🔸 JavaScript
+
+document.getElementById("nameInput").addEventListener("input", function () {
+  let name = document.getElementById("nameInput").value;
+  document.getElementById("greetingText").innerText = "Hello, " + name + "!";
+});
+
+💡 How it works:
+addEventListener("input", ...): Fires every time you type
+Grabs the value of the input
+Sets it as the new greeting in real-time using .innerText
+
+✅ What is innerText?
+It means: "Get or set the text inside an HTML element."
+
+🔍 Example:
+
+HTML:
+<p id="demo">Hello!</p>
+  
+JavaScript:
+// Read the text
+let text = document.getElementById("demo").innerText;
+console.log(text); // ➜ "Hello!"
+// Change the text
+document.getElementById("demo").innerText = "Yo, Navnit!";
+
+🧠 Use it when you want to:
+
+Display output on the page
+Update messages, labels, scores, etc.
+React to user actions by changing visible content
+
+✅ TL;DR:
+innerText = "change what the user sees inside a tag"
+
+***DOM stands for: Document Object Model***
