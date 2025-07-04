@@ -1,0 +1,37 @@
+Part 1: Intermediate JS
+
+✅ Objects
+✅ Arrays of Objects
+✅ Light refresher on Events (we’ll recap how addEventListener works with clicks/inputs)
+
+Part 2: fetch(), Promises, and API Intro
+
+Calling data from APIs (like weather/jokes)
+Understanding .then() and Promise chaining
+Basic error handling (.catch())
+
+🔹 1. Objects (Your Data’s VIP Lounge)
+
+let person = {
+  name: "Navnit",
+  age: 24,
+  coder: true
+};
+console.log(person.name);   // "Navnit"
+console.log(person["age"]); // 24
+{} = object
+
+key: value pairs
+
+Access with dot . or bracket []
+
+🔹 2. Array of Objects (Your data army)
+
+let people = [
+  { name: "Navnit", age: 24 },
+  { name: "Sarah", age: 22 },
+  { name: "Arjun", age: 28 }
+];
+
+console.log(people[1].name); // "Sarah"
+It’s just an array [] where each item is an object {}
